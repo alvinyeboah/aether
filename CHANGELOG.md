@@ -1,5 +1,9 @@
 # Developer preview notes
 
+## 0.4.1
+
+Same features as 0.4.0, now **signed with a Developer ID and notarized by Apple**, so it opens without the right-click workaround. Passkeys and iCloud password filling are still unavailable until Apple approves the browser passkey capability (requested).
+
 ## 0.4.0
 
 A large update. New: a space dock with custom icons, colours and backgrounds for spaces and profiles; split view with resizable panes, a picker and drag and drop; private browsing; inline URL completion; page zoom, print, save and media pause; a Settings search box, Spaces editor and live shortcuts list; import from Safari, Chrome, Arc and Dia; built-in developer tools (Elements with a pick tool, Network, Application); link peek (⇧-click); search inside pages you have read; on-device page translation and picture in picture.

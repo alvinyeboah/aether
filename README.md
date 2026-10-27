@@ -67,11 +67,11 @@ It is written in **Swift 6, AppKit and WebKit**. There is no web-based chrome, n
 1. Open the [Releases](https://github.com/alvinyeboah/aether/releases) page and download the latest `Aether-<version>-arm64.zip`.
 2. Compare it with the published checksum: `shasum -a 256 Aether-<version>-arm64.zip` should match the line in [`SHA256SUMS`](SHA256SUMS).
 3. Unzip it and drag **Aether.app** into `/Applications`.
-4. The first time, **right-click Aether → Open**, then confirm. Current builds are *ad-hoc signed and not notarized*, so macOS asks before opening them. If you still see a block, open **System Settings → Privacy & Security** and choose **Open Anyway**.
+4. Open Aether. From 0.4.1 the app is **signed with a Developer ID and notarized by Apple**, so macOS opens it with the usual "downloaded from the internet" confirmation. (0.4.0 and earlier were ad-hoc signed: for those, right-click → Open, or use **Open Anyway** in System Settings → Privacy & Security.)
 
 To make Aether your default browser, open **Settings → General → Default Web Browser**.
 
-> A Developer ID signed, notarized build is planned. Until then please only download Aether from this repository, and verify the checksum.
+> Only download Aether from this repository or the official website, and verify the checksum.
 
 ---
 
@@ -279,7 +279,7 @@ Importing does **not** move passwords, passkeys, signed-in sessions, cookies, ex
 
 Aether is a **developer preview**, built by one person. It is good enough to try and to give feedback on, but it is not a finished browser.
 
-- **Ad-hoc signed, not notarized.** You will see a Gatekeeper prompt on first launch. A Developer ID signed and notarized build is planned.
+- **Signed and notarized, without passkeys.** 0.4.1 is signed with a Developer ID and notarized by Apple. It does not yet have the Apple browser passkey capability (requested, awaiting Apple).
 - **Passkeys and iCloud Passwords.** Browser access to iCloud passkeys needs an Apple-granted entitlement that has not been enabled in public builds yet, so automatic iCloud password filling and passkey sign-in are **not verified**. Sites that use their own password fields work normally.
 - **Apple Silicon only** for now.
 - **No sync.** There is no cloud sync between Macs.
@@ -298,7 +298,7 @@ No. The application source is private; this repository is for downloads, release
 Apple's WebKit (`WKWebView`), the same engine as Safari. Sites that work in Safari work here.
 
 **Why is there a security prompt when I open it?**
-Preview builds are ad-hoc signed and not notarized. Right-click → Open, or use **Open Anyway** in System Settings → Privacy & Security.
+Only the older 0.3.x and 0.4.0 downloads are ad-hoc signed; for those, right-click → Open, or use **Open Anyway** in System Settings → Privacy & Security. 0.4.1 and later are notarized and open normally.
 
 **Does it work on Intel Macs or Windows?**
 Not currently. It is built for Apple Silicon and macOS 14 or later.
