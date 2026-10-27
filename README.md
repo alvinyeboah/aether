@@ -38,6 +38,7 @@ It is written in **Swift 6, AppKit and WebKit**. There is no web-based chrome, n
 - [Gestures](#gestures)
 - [Moving over from another browser](#moving-over-from-another-browser)
 - [Privacy](#privacy)
+- [Security](#security)
 - [Status and known limits](#status-and-known-limits)
 - [FAQ](#faq)
 - [Feedback](#feedback)
@@ -269,11 +270,18 @@ Importing does **not** move passwords, passkeys, signed-in sessions, cookies, ex
 
 ## Privacy
 
-- **No telemetry, no analytics, no accounts.** Aether does not phone home.
+- **No telemetry, no analytics, no accounts.** The only thing Aether contacts on its own is GitHub, once a day, to check for a newer release (you can turn this off in Settings → General → Updates).
+- **Secure connections first.** Aether tries `https://` before `http://` and asks before using a site with no secure version.
 - **Local by default.** Tabs, history, bookmarks and settings live in your own `Library/Application Support/Aether` folder; web data lives in per-profile WebKit stores.
 - **Isolated profiles.** Cookies and site storage are never shared between profiles.
 - **Private browsing is memory-only.** It uses a non-persistent data store and clears when you exit.
 - **Your search engine's rules apply.** Searches go to the search engine you chose (Google by default); Aether does not add its own services.
+
+---
+
+## Security
+
+Pages run in Apple's sandboxed WebKit, certificates are checked normally, updates are installed only if they are signed by the same developer and notarized, and your data on disk is readable only by your account. Extensions are off by default. Aether has not had an independent audit. Read the [security overview](https://aether.alvinyeboah.com/security), and report vulnerabilities privately through [SECURITY.md](SECURITY.md).
 
 ---
 

@@ -1,5 +1,19 @@
 # Developer preview notes
 
+## 0.5.0: security release
+
+- **Updates:** Aether can now check GitHub once a day and update itself (Settings → General → Updates, or Aether → Check for Updates…). It installs only a build that is signed by the same developer as your copy, notarized by Apple, has the same bundle identifier and a higher version. You can turn the daily check off. This version has to be installed by hand once; later versions can update themselves.
+- **HTTPS first:** web addresses typed as http:// are tried as https:// first, and Aether asks before using a site that has no secure version. Plain-HTTP pages show a warning in the address bar. Localhost and private-network addresses are left alone (Settings → Privacy & Security).
+- **Real tracker blocking:** about 150 rules for analytics, session recording, ad networks and social pixels, applied only when another site loads them. Sign-in, payments and CAPTCHAs are not touched.
+- **Private data on disk:** Aether's data folder and its files are now readable only by your account; downloads get a proper macOS quarantine tag; remembered page text is deleted after 7, 30 or 90 days (30 by default).
+- **Extensions are off by default** (Settings → Extensions → Enable experimental extensions).
+- **Security policy:** report vulnerabilities privately at https://github.com/alvinyeboah/aether/security/advisories/new. Details at https://aether.alvinyeboah.com/security.
+- Fixes: "Frame load interrupted" is no longer shown as an error over a working page or a download.
+
+Not changed: Aether's own app process is not App Sandboxed (web pages are, through WebKit), there is no built-in password manager, and there has been no independent audit. Passkeys are still waiting on Apple.
+
+Signed with a Developer ID and notarized by Apple.
+
 ## 0.4.3
 
 - **Fixes "Sign in with Google" and "Sign in with Apple"** on X, Pinterest and other sites. Aether's tracker rules were blocking every window a page opened, so the sign-in window never appeared. Pop-ups opened by a click now work, and they close themselves and hand control back to the page that opened them.
