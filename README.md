@@ -36,7 +36,7 @@ It is written in **Swift 6, AppKit and WebKit**. There is no web-based chrome, n
 - [Everything it does](#everything-it-does)
 - [Keyboard shortcuts](#keyboard-shortcuts)
 - [Gestures](#gestures)
-- [Moving over from Dia](#moving-over-from-dia)
+- [Moving over from another browser](#moving-over-from-another-browser)
 - [Privacy](#privacy)
 - [Status and known limits](#status-and-known-limits)
 - [FAQ](#faq)
@@ -182,7 +182,7 @@ A quiet start page with the metallic Aether orbit, one search field, and a grid 
 **Data**
 - Everything is stored locally, per profile
 - Bookmarks and history, scoped per profile
-- A one-way, additive importer for readable Dia bookmarks and history
+- A one-way, additive importer for Safari, Chrome, Arc and Dia bookmarks and history
 
 ---
 
@@ -243,11 +243,18 @@ Vertical scrolling is never captured, and gestures over a web page stay with the
 
 ---
 
-## Moving over from Dia
+## Moving over from another browser
 
-**Settings → Import Data** can read Dia's bookmarks and history so you do not start from zero. It is a preview you can inspect first; imports are additive, skip duplicates and never modify Dia's own data.
+**Settings → Import Data** can bring in bookmarks and history from **Safari, Chrome, Arc and Dia**, so you do not start from zero. Choose a browser, preview what Aether found, and import. Each browser's profiles arrive as separate Aether profiles, imports are additive, repeated imports skip duplicates, and the original browser's data is never modified.
 
-Migration does **not** move encrypted live sessions, passwords, signed-in cookies, extensions or Dia-specific AI data. Some history files can only be read while Dia is closed, or from an export.
+| From | What comes across |
+| --- | --- |
+| **Safari** | Bookmarks, Favorites, Reading List and history |
+| **Chrome** | Bookmarks and history from every Chrome profile |
+| **Arc** | History, plus your pinned tabs and folders, grouped by space, as bookmarks |
+| **Dia** | Bookmarks and history from every Dia profile |
+
+Importing does **not** move passwords, passkeys, signed-in sessions, cookies, extensions or browser-specific features. History is read from a copy, so the other browser can stay open. macOS protects Safari's data folder: if the Safari preview comes back empty, use **Choose Folder…** and select `~/Library/Safari`, or give Aether Full Disk Access in System Settings → Privacy & Security.
 
 ---
 
@@ -270,7 +277,7 @@ Aether is a **developer preview**, built by one person. It is good enough to try
 - **Apple Silicon only** for now.
 - **No sync.** There is no cloud sync between Macs.
 - **Extensions.** WebExtensions support is limited and experimental.
-- **Dia import** covers readable bookmarks and history only.
+- **Importing** covers readable bookmarks and history only.
 - **Not hardened for high-risk use.** Aether uses WebKit, so it receives WebKit and macOS security updates, but treat a preview as a preview.
 
 ---
