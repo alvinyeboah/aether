@@ -1,5 +1,20 @@
 # Developer preview notes
 
+## 0.4.0
+
+A large update. New: a space dock with custom icons, colours and backgrounds for spaces and profiles; split view with resizable panes, a picker and drag and drop; private browsing; inline URL completion; page zoom, print, save and media pause; a Settings search box, Spaces editor and live shortcuts list; import from Safari, Chrome, Arc and Dia; built-in developer tools (Elements with a pick tool, Network, Application); link peek (⇧-click); search inside pages you have read; on-device page translation and picture in picture.
+
+Changes: sideways swipes switch spaces only in the collapsed rail; the expanded dock scrolls when there are many spaces.
+
+Fixes include a crash when a page opened a pop-up (sign-in windows), invisible Cancel button text in prompts, and the Downloads popover opening away from its button.
+
+### Known limits
+
+- Ad-hoc signed and not notarized: right-click Aether and choose Open the first time.
+- Browser passkeys and iCloud password filling are not available yet (they need an Apple-approved entitlement and a signed build).
+- Apple Silicon and macOS 14 or later. Page translation needs macOS 15 or later; glass surfaces use macOS 26 or later.
+- Tested with automated tests and hands-on checks, not on a wide range of Macs; link peek, translation, picture in picture and trackpad swipes have had little real-world use.
+
 ## 0.3.0
 
 A native browser experience upgrade with a structured sidebar, a fully interactive compact tab rail, more page padding, glass surfaces, the corrected metallic orbit artwork, context and tab transitions, Google by default, local address suggestions, space swipes, grouped settings and a local Dia import preview.
