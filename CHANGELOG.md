@@ -1,5 +1,12 @@
 # Developer preview notes
 
+## 0.4.3
+
+- **Fixes "Sign in with Google" and "Sign in with Apple"** on X, Pinterest and other sites. Aether's tracker rules were blocking every window a page opened, so the sign-in window never appeared. Pop-ups opened by a click now work, and they close themselves and hand control back to the page that opened them.
+- Pop-ups that nobody asked for are still blocked by WebKit, which only lets a page open a window from a click or other user action.
+
+Signed with a Developer ID and notarized by Apple. Passkeys are still unavailable until Apple approves the browser passkey capability (requested).
+
 ## 0.4.2
 
 - **Developer tools redesigned in Chrome's style.** Elements is now editable (edit as HTML, attributes and text, duplicate, delete) with a Styles pane (editable, toggleable declarations and colour swatches), Computed and a box-model Layout view. Network has record, clear, preserve log, type filters, a waterfall, and Headers / Preview / Response / Timing for each request. Application has a storage tree with a filter, value preview and editing.
