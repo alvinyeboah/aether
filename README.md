@@ -49,6 +49,7 @@ It is written in **Swift 6, AppKit and WebKit**. There is no web-based chrome, n
 
 | | |
 | --- | --- |
+| **Super lightweight** | A 6.6 MB download, about 9 MB installed. Chromium-based browsers such as Chrome and Dia are over 1 GB because they bundle their own engine; Aether uses the WebKit that is already part of macOS. |
 | **Spaces, not tab soup** | Group tabs by what you are doing. Each space has its own glyph, colour and even wallpaper, and the whole sidebar tints to match. |
 | **A dock for your spaces** | The active space is a wide pill; the rest are compact orbs. Drag to reorder, swipe to switch. |
 | **Profiles that really are separate** | Every profile has its own WebKit data store, so cookies, logins and local storage never cross profile lines. |
