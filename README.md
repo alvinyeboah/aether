@@ -168,7 +168,8 @@ A quiet start page with the metallic Aether orbit, one search field, and a grid 
 - Page zoom remembered per site, print, save as web archive, and one-key media pause
 - Downloads with a popover
 - Content blocking, popup blocking and per-site permissions
-- Built-in developer tools (`⌥⌘I`): **Elements** with a pick-on-page tool, **Network** and **Application** (cookies, storage, IndexedDB, caches)
+- Built-in developer tools (`⌥⌘I`) in Chrome's dark style: an editable **Elements** tree with a Styles editor and pick tool, **Network** with a waterfall and Headers / Preview / Response / Timing, and **Application** for cookies, storage, IndexedDB and caches
+- A right-click menu in Aether's own design, including **Inspect Element**
 - Link peek: ⇧-click a link to preview it in a card, then keep it or dismiss it
 - Search inside the pages you have read from the command palette (local, off in private browsing, switchable)
 - On-device page translation (`⌃⌘T`, macOS 15+) and picture in picture (`⌃⌘P`)

@@ -1,5 +1,15 @@
 # Developer preview notes
 
+## 0.4.2
+
+- **Developer tools redesigned in Chrome's style.** Elements is now editable (edit as HTML, attributes and text, duplicate, delete) with a Styles pane (editable, toggleable declarations and colour swatches), Computed and a box-model Layout view. Network has record, clear, preserve log, type filters, a waterfall, and Headers / Preview / Response / Timing for each request. Application has a storage tree with a filter, value preview and editing.
+- **Right-click menu** for pages in Aether's own design, including Inspect Element.
+- **Websites now see Aether as Safari**, so Google and other sites serve their full modern pages (including AI Mode) instead of a stripped-down layout.
+- Safari's Web Inspector can no longer attach to your tabs unless you turn it on in Settings, since that lets other programs read open pages.
+- Fixes: a crash when a page opened a pop-up (sign-in windows), and the Downloads popover and Cancel button text.
+
+Signed with a Developer ID and notarized by Apple. Passkeys are still unavailable until Apple approves the browser passkey capability (requested).
+
 ## 0.4.1
 
 Same features as 0.4.0, now **signed with a Developer ID and notarized by Apple**, so it opens without the right-click workaround. Passkeys and iCloud password filling are still unavailable until Apple approves the browser passkey capability (requested).
