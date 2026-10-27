@@ -8,7 +8,7 @@ Reliability repairs include settings-window geometry, tab pinning, profile/space
 
 ### Verification
 
-The local ARM64 build passed 92 tests. Native UI checks covered settings, profile controls, palette filtering/Return, compact mode, and the space-management menu. Hardware trackpad gestures and signed iCloud authentication still need end-to-end confirmation.
+The local ARM64 build passed 94 tests. Native UI checks covered settings, profile controls, palette filtering/Return, compact mode, and the space-management menu. Hardware trackpad gestures and signed iCloud authentication still need end-to-end confirmation.
 
 ### Known release limits
 
