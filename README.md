@@ -88,7 +88,7 @@ Everything sits in one calm column: your profile at the top, navigation and the 
 Spaces live in a dock at the bottom of the sidebar. The space you are in is a wide pill with its name; the others shrink to orbs so the dock never gets crowded. If you have many spaces the dock scrolls, with soft fades at the edges, instead of squashing anything.
 
 - Drag an orb to put your spaces in the order you use them.
-- Swipe sideways with two fingers over the sidebar to move between spaces.
+- In the collapsed rail, swipe sideways with two fingers to move between spaces.
 - `⌥⌘→` / `⌥⌘←` step through spaces and `⌥⌘1`–`⌥⌘9` jump straight to one.
 - Right-click a tab and use **Move to Space** to send it elsewhere.
 
@@ -168,7 +168,11 @@ A quiet start page with the metallic Aether orbit, one search field, and a grid 
 - Page zoom remembered per site, print, save as web archive, and one-key media pause
 - Downloads with a popover
 - Content blocking, popup blocking and per-site permissions
-- Developer tools: Inspect Element, plus one-click `localhost` launchers for common dev-server ports
+- Built-in developer tools (`⌥⌘I`): **Elements** with a pick-on-page tool, **Network** and **Application** (cookies, storage, IndexedDB, caches)
+- Link peek: ⇧-click a link to preview it in a card, then keep it or dismiss it
+- Search inside the pages you have read from the command palette (local, off in private browsing, switchable)
+- On-device page translation (`⌃⌘T`, macOS 15+) and picture in picture (`⌃⌘P`)
+- One-click `localhost` launchers for common dev-server ports
 - A resource monitor showing process memory, CPU and tab states
 
 **Interface**
@@ -228,7 +232,10 @@ Every shortcut is also in the menus and in **Settings → Keyboard Shortcuts**.
 | `⇧⌘N` | Private browsing |
 | `⌘Y` / `⌥⌘B` / `⌥⌘L` | History / bookmarks / downloads |
 | `⌘D` | Bookmark this page |
-| `⌥⌘I` | Inspect element |
+| `⌥⌘I` | Developer tools |
+| `⇧⌘C` | Select an element on the page |
+| `⌃⌘P` | Picture in picture |
+| `⌃⌘T` | Translate page / show original |
 | `⌥⌘U` | Resource monitor |
 | `⌘,` | Settings |
 
@@ -236,7 +243,7 @@ Every shortcut is also in the menus and in **Settings → Keyboard Shortcuts**.
 
 ## Gestures
 
-- **Swipe between spaces:** two fingers sideways over the sidebar or rail. Swipe left for the next space, right for the previous; it behaves the same with natural scrolling on or off, and the page slides in the direction you moved. One swipe switches once.
+- **Swipe between spaces:** two fingers sideways over the collapsed rail (the expanded sidebar leaves sideways swipes alone). Swipe left for the next space, right for the previous; it behaves the same with natural scrolling on or off, and the page slides in the direction you moved. One swipe switches once.
 - **Swipe back and forward:** two fingers sideways over a page, with WebKit's native snapshot animation. This can be turned off in **Settings → Tabs**.
 
 Vertical scrolling is never captured, and gestures over a web page stay with the page.
