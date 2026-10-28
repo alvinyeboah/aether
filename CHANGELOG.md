@@ -1,5 +1,15 @@
 # Developer preview notes
 
+## 0.6.0
+
+- **Ad and tracker blocking.** Aether now blocks ads and trackers with the public EasyList and EasyPrivacy lists, converted to WebKit's native rules, on top of the existing tracker rules. Sign-in, payment and CAPTCHA pages are never blocked. About once a week (or with Settings → Update Now) it downloads fresh lists from easylist.to; nothing about your browsing is sent, and the weekly download can be turned off. The first launch after installing takes a few seconds longer while the lists are prepared, and the app uses more memory than before. It does not block everything: some first-party and video ads (YouTube) still get through, and there is no "blocks all ads" claim.
+- **Site shields.** A shield button in the address bar (and in the collapsed rail) turns blocking off or on for one site, per profile, and reloads the page.
+- **Floating video.** When a playing video leaves view because you switched tab or space, it can float in a small player so it keeps playing (Settings → turn off "Float playing video when I switch tabs or spaces"). The picture-in-picture button falls back to this player when WebKit does not enter picture in picture.
+- **A real 3D logo** on the start page that you can drag to turn, a softer start-page glow, a tidier address bar (long addresses no longer run under the shield), and the window buttons live inside the sidebar again.
+- **Fixes:** YouTube and other videos go fullscreen without a blank page; a warning appears if Aether is run from a disk image or a temporary download folder, where it can crash when the disk image goes away; light-mode glow and halo polish; swiping anywhere over the sidebar switches space.
+
+Signed with a Developer ID and notarized by Apple. If you are on 0.5.0 or later, Aether can update itself: Aether → Check for Updates…
+
 ## 0.5.3
 
 - **A real 3D logo.** The start-page logo is now a glowing ball that turns in 3D: the ribbon slides around the curve of the sphere, the surface flows like liquid, and a rim of light and a drifting highlight play across the glass. It is drawn on the GPU by a tiny shader and costs almost nothing. The pointer tilt and the orbit rings are gone; the colour blobs stay.
