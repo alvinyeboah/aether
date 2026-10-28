@@ -1,5 +1,15 @@
 # Developer preview notes
 
+## 0.5.2
+
+- **A livelier new-tab page.** The logo is centred and animated: it pops in, turns, floats, glows and leans toward your pointer. The page has a slowly drifting background coloured by your current space (or its wallpaper), faint stars, and two orbits with small satellites around the logo.
+- **Rotating greetings**, including a time-of-day one ("Good morning, <your first name>."), a fresh one each time you open a tab and a new one every few seconds.
+- **Quick-action chips** (Private, Split view, History, Downloads, Settings) and a **Jump back in** row of your most recent pages.
+- **Shortcut tiles** lift and glow when you hover them.
+- **Tabs animate open:** a new tab grows into the sidebar with a soft spring, and a new tile pops into the collapsed rail.
+
+Motion respects Reduce Motion. Signed with a Developer ID and notarized by Apple. If you are on 0.5.0 or later, Aether can update itself: Aether → Check for Updates…
+
 ## 0.5.1
 
 - **Sidebar padding now matches the page margin** (20 pt on each side and at the bottom), so the sidebar and the page share one outer padding.
