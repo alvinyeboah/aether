@@ -1,5 +1,13 @@
 # Developer preview notes
 
+## 0.5.3
+
+- **A real 3D logo.** The start-page logo is now a glowing ball that turns in 3D: the ribbon slides around the curve of the sphere, the surface flows like liquid, and a rim of light and a drifting highlight play across the glass. It is drawn on the GPU by a tiny shader and costs almost nothing. The pointer tilt and the orbit rings are gone; the colour blobs stay.
+- **The profile and space read as "Personal • Media"** under the greeting, with the dot in the space's colour.
+- **Address suggestions are centred** and a single suggestion no longer clips or shows a scroller.
+
+Motion respects Reduce Motion (the ball is then a still image). Signed with a Developer ID and notarized by Apple. If you are on 0.5.0 or later, Aether can update itself: Aether → Check for Updates…
+
 ## 0.5.2
 
 - **A livelier new-tab page.** The logo is centred and animated: it pops in, turns, floats, glows and leans toward your pointer. The page has a slowly drifting background coloured by your current space (or its wallpaper), faint stars, and two orbits with small satellites around the logo.
