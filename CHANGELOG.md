@@ -1,5 +1,11 @@
 # Developer preview notes
 
+## 0.6.1
+
+- **Aether now appears in System Settings → Desktop & Dock → Default web browser.** It declared web links but not web pages, and macOS lists a browser only if it claims both. Drag Aether into Applications, open it from there, then choose it in System Settings (or Aether → Settings → Default Web Browser). It claims web pages at the lowest priority, so it does not take over opening `.html` files.
+
+Signed with a Developer ID and notarized by Apple. If you are on 0.5.0 or later, Aether can update itself: Aether → Check for Updates…
+
 ## 0.6.0
 
 - **Ad and tracker blocking.** Aether now blocks ads and trackers with the public EasyList and EasyPrivacy lists, converted to WebKit's native rules, on top of the existing tracker rules. Sign-in, payment and CAPTCHA pages are never blocked. About once a week (or with Settings → Update Now) it downloads fresh lists from easylist.to; nothing about your browsing is sent, and the weekly download can be turned off. The first launch after installing takes a few seconds longer while the lists are prepared, and the app uses more memory than before. It does not block everything: some first-party and video ads (YouTube) still get through, and there is no "blocks all ads" claim.
