@@ -1,5 +1,11 @@
 # Developer preview notes
 
+## 0.5.1
+
+- **Sidebar padding now matches the page margin** (20 pt on each side and at the bottom), so the sidebar and the page share one outer padding.
+
+Signed with a Developer ID and notarized by Apple. If you are on 0.5.0, Aether can update itself: Aether → Check for Updates…
+
 ## 0.5.0: security release
 
 - **Updates:** Aether can now check GitHub once a day and update itself (Settings → General → Updates, or Aether → Check for Updates…). It installs only a build that is signed by the same developer as your copy, notarized by Apple, has the same bundle identifier and a higher version. You can turn the daily check off. This version has to be installed by hand once; later versions can update themselves.
