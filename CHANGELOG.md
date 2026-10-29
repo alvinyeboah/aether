@@ -1,5 +1,15 @@
 # Developer preview notes
 
+## 0.6.2
+
+- **Three sidebar modes.** Expanded, Compact (a slim rail) and Hidden (only the page; move the pointer to the left edge and the sidebar slides over it, then tucks away when you leave). Change it from View → Sidebar, Settings → Appearance, or press ⌃⌘S to cycle.
+- **The close, minimise and zoom buttons live in the sidebar in every mode:** in the card's corner when expanded, centred across the rail when compact, and shown only while the sidebar slides out when hidden. No title-bar strip, and the page keeps the same even border everywhere.
+- **Tabs.** Related link tabs (⌘-click, middle-click, Open Link in New Tab) can group with the page they came from (asked once; change it in Settings → Tabs). Groups collapse and close together. Split panes share one row. ⌘T always focuses the start-page search.
+- **Dark mode fixes.** A window that switched to dark kept some light colours (white selected tab, grey address bar, light error page). Colours now follow Light and Dark changes everywhere. Selected tabs get a restrained ruby highlight.
+- **Fixed:** the floating-player tests were unreliable on a busy Mac (test-only); the fixed localhost shortcuts were removed from Developer.
+
+Signed with a Developer ID and notarized by Apple. If you are on 0.5.0 or later, Aether can update itself: Aether → Check for Updates…
+
 ## 0.6.1
 
 - **Aether now appears in System Settings → Desktop & Dock → Default web browser.** It declared web links but not web pages, and macOS lists a browser only if it claims both. Drag Aether into Applications, open it from there, then choose it in System Settings (or Aether → Settings → Default Web Browser). It claims web pages at the lowest priority, so it does not take over opening `.html` files.
