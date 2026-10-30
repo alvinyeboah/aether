@@ -1,5 +1,18 @@
 # Developer preview notes
 
+## 0.6.3
+
+- **Adaptive sidebar colors:** navigation and dynamic page themes update reliably, stale samples cannot overwrite a newer page, and light/dark surfaces retain readable text.
+- **Popup protection:** preserve approved navigation chains, restore popup rules alongside compiled filter caches, and correctly resolve disabled filter rules.
+- **Privacy and permissions:** camera, microphone and notification decisions are separated by full origin; old hostname-only approvals require a fresh prompt. Private favicons use a memory-only cache that rejects late results after the session ends.
+- **Extensions:** enforce content-script exclusions and resource containment. Native controllers remain available on existing tabs; disabling extensions unloads their contexts and cancels unfinished loads.
+- **Browser fixes:** search shortcut encoding and completion casing, split-pane preservation, profile teardown, download progress and sidebar control consistency.
+- **Screen sharing:** the custom bridge is restricted to the main frame; unsupported audio sharing is disabled and labelled unavailable. The app delegate is retained explicitly throughout the release event loop.
+
+**Verification:** 337 automated tests passed across 90 suites. The final package is ARM64, Developer ID signed, notarized and stapled. The live YouTube fullscreen/tab-switch check remains pending; this release does not claim that check passed. One earlier full run had a PiP video-fixture readiness timeout; its isolated rerun and the subsequent full suite passed.
+
+Signed with a Developer ID and notarized by Apple. If you are on 0.5.0 or later, Aether can update itself: Aether → Check for Updates…
+
 ## 0.6.2
 
 - **Three sidebar modes.** Expanded, Compact (a slim rail) and Hidden (only the page; move the pointer to the left edge and the sidebar slides over it, then tucks away when you leave). Change it from View → Sidebar, Settings → Appearance, or press ⌃⌘S to cycle.
