@@ -1,5 +1,18 @@
 # Developer preview notes
 
+## 0.6.6
+
+- **Seamless Light & Dark Mode Dynamic Switching:** Toggling between System, Dark, and Light appearances in Settings now cascades instantly across all open windows, chrome surfaces, and WebKit rendering instances. Web pages re-evaluate `@media (prefers-color-scheme)` immediately without requiring settings toggles or browser restarts.
+- **Adaptive Sidebar Tinting Enabled by Default:** "Tint Sidebar with Page Color" is now enabled by default for all users, dynamically sampling chromatic tints from active web pages and adapting seamlessly across both Light and Dark palettes.
+- **Premium Frosted Glass Settings Redesign:** Transformed Settings with full-size translucent glass (`NSVisualEffectView`), floating macOS traffic lights, polished search pill, custom pill-selected navigation rows with brand indicator, and frosted acrylic card containers with subtle hair-thin borders.
+- **Multi-Context Private Browsing & Keyboard Shortcut Navigation:**
+  - Pressing `⌘⇧N` enters private browsing from normal mode, and closes the current private browsing context and returns to normal browsing when pressed inside private mode.
+  - Full support for multiple completely isolated private browsing contexts ("Private 1", "Private 2", etc.), each with independent ephemeral data stores, created directly from the sidebar.
+  - Fixed Profile Switcher layout and badge positioning to eliminate text overlap, truncation, and awkward ellipses.
+- **Universal 2 Binary (Apple Silicon & Intel Macs):** Built as a native Universal fat binary (`arm64` + `x86_64`), Developer ID signed, Apple notarized, and stapled into both `.dmg` and `.zip` distribution packages.
+
+Signed with a Developer ID and notarized by Apple. If you are on 0.5.0 or later, Aether can update itself: Aether → Check for Updates…
+
 ## 0.6.5
 
 - **Universal 2 Binary (Apple Silicon & Intel Mac support):** compiled as a native Universal binary running with full hardware performance on both Apple Silicon (M1–M4, ARM64) and Intel (x86_64) Macs running macOS 14 Sonoma or macOS 15 Sequoia.
