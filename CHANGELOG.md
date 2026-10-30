@@ -1,9 +1,10 @@
 # Developer preview notes
 
-## 0.6.6
+## 0.6.7
 
-- **Seamless Light & Dark Mode Dynamic Switching:** Toggling between System, Dark, and Light appearances in Settings now cascades instantly across all open windows, chrome surfaces, and WebKit rendering instances. Web pages re-evaluate `@media (prefers-color-scheme)` immediately without requiring settings toggles or browser restarts.
-- **Adaptive Sidebar Tinting Enabled by Default:** "Tint Sidebar with Page Color" is now enabled by default for all users, dynamically sampling chromatic tints from active web pages and adapting seamlessly across both Light and Dark palettes.
+- **Edge-Hugging Liquid Progress Beam:** Redesigned page loading with an edge-hugging luminous neon beam that flows along the rounded corners and contours of the webpage canvas with a glowing white-hot comet spark head and bloom completion effect.
+- **Seamless Light & Dark Mode Dynamic Switching:** Toggling between System, Dark, and Light appearances in Settings now cascades instantly across all open windows, chrome surfaces, and WebKit rendering instances without app relaunches or page refreshes.
+- **Adaptive Sidebar Tinting Enabled by Default:** "Tint Sidebar with Page Color" is now enabled by default for all users, dynamically sampling chromatic tints from active web pages and adapting vibrantly across both Light and Dark palettes.
 - **Premium Frosted Glass Settings Redesign:** Transformed Settings with full-size translucent glass (`NSVisualEffectView`), floating macOS traffic lights, polished search pill, custom pill-selected navigation rows with brand indicator, and frosted acrylic card containers with subtle hair-thin borders.
 - **Multi-Context Private Browsing & Keyboard Shortcut Navigation:**
   - Pressing `⌘⇧N` enters private browsing from normal mode, and closes the current private browsing context and returns to normal browsing when pressed inside private mode.
