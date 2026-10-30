@@ -1,5 +1,13 @@
 # Developer preview notes
 
+## 0.6.5
+
+- **Fullscreen video recovery:** eliminated black/blank screens when switching tabs or windows during fullscreen video playback and returning to normal window mode.
+- **Keyboard shortcuts:** suppressed unwanted macOS system alert beeps when using YouTube shortcuts (arrow keys, J, K, L, M, and spacebar).
+- **New Tab 3D Emblem:** enhanced the animated orb with physical surface texture micro-relief, directional 3D key/fill lighting, ambient occlusion, and specular highlights.
+
+Signed with a Developer ID and notarized by Apple. If you are on 0.5.0 or later, Aether can update itself: Aether → Check for Updates…
+
 ## 0.6.4
 
 - **Web page interaction:** restored full pointer interaction, clicking, and typing into text inputs, search boxes, and forms across all web pages.
