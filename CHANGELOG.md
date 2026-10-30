@@ -1,5 +1,11 @@
 # Developer preview notes
 
+## 0.6.4
+
+- **Web page interaction:** restored full pointer interaction, clicking, and typing into text inputs, search boxes, and forms across all web pages.
+
+Signed with a Developer ID and notarized by Apple. If you are on 0.5.0 or later, Aether can update itself: Aether → Check for Updates…
+
 ## 0.6.3
 
 - **Session restoration:** the browser remembers the exact active space, active tab, and per-space active tabs across app quits and window closes, returning you right where you left off.
