@@ -2,8 +2,10 @@
 
 ## 0.6.5
 
-- **Fullscreen video recovery:** eliminated black/blank screens when switching tabs or windows during fullscreen video playback and returning to normal window mode.
-- **Keyboard shortcuts:** suppressed unwanted macOS system alert beeps when using YouTube shortcuts (arrow keys, J, K, L, M, and spacebar).
+- **Universal 2 Binary (Apple Silicon & Intel Mac support):** compiled as a native Universal binary running with full hardware performance on both Apple Silicon (M1–M4, ARM64) and Intel (x86_64) Macs running macOS 14 Sonoma or macOS 15 Sequoia.
+- **Packaged DMG Disk Image:** distributed in a custom-designed `.dmg` installer with drag-to-Applications layout, signed with Developer ID and notarized by Apple.
+- **Fullscreen video recovery:** eliminated black/blank screens when entering fullscreen or switching tabs and windows during video playback, preserving WebKit fullscreen hierarchy and hardware compositing layers.
+- **Keyboard shortcuts:** suppressed unwanted macOS system alert beeps while preserving full shortcut handling on YouTube and web video players (arrow keys, J, K, L, M, F, and spacebar).
 - **New Tab 3D Emblem:** enhanced the animated orb with physical surface texture micro-relief, directional 3D key/fill lighting, ambient occlusion, and specular highlights.
 
 Signed with a Developer ID and notarized by Apple. If you are on 0.5.0 or later, Aether can update itself: Aether → Check for Updates…
