@@ -1,5 +1,12 @@
 # Developer preview notes
 
+## 0.6.8
+
+- **Fullscreen Tab Switching & Background Layer Purge:** Fixed an issue where switching tabs while a video (e.g. YouTube) was in element fullscreen would leave the previous tab's content (such as Cloudflare) visible in the viewport or render a blank window. Inactive tabs' web views are now immediately removed from the container on tab change, element fullscreen is cleanly dismissed, and clicking a tab in the sidebar reliably attaches and displays the selected tab.
+- **Universal 2 Binary (Apple Silicon & Intel Macs):** Built as a native Universal fat binary (`arm64` + `x86_64`), Developer ID signed, Apple notarized, and stapled into both `.dmg` and `.zip` distribution packages.
+
+Signed with a Developer ID and notarized by Apple. If you are on 0.5.0 or later, Aether can update itself: Aether → Check for Updates…
+
 ## 0.6.7
 
 - **Edge-Hugging Liquid Progress Beam:** Redesigned page loading with an edge-hugging luminous neon beam that flows along the rounded corners and contours of the webpage canvas with a glowing white-hot comet spark head and bloom completion effect.
