@@ -1,5 +1,19 @@
 # Developer preview notes
 
+## 0.7.0
+
+- **Site controls:** review camera, microphone and notification permissions, host shields and site-data clearing from the address/rail shield button.
+- **Downloads:** progress, individual dismissal and Retry/Resume when WebKit provides recovery data and the original tab context is still available.
+- **Session safety:** local recovery snapshots and an explicit choice after an interrupted shutdown. File → Recover Session… restores recent normal-profile tabs; private contexts must be closed first.
+- **Tab Manager:** profile-scoped search, exact-URL duplicate preview, multi-selection, pin/unpin, move and confirmed close (Command-Option-Shift-T).
+- **Bookmark portability:** native HTML import/export with folder handling and per-profile duplicate checks.
+- **Browser repairs:** session-save ordering, profile boundaries on startup and tab moves, split-pane selection, popup redirect protection, and presentation ownership during fullscreen refreshes.
+- **Meeting PiP:** precise self-microphone/camera/hand controls, a reaction picker, unavailable-control feedback, hover highlights and press feedback.
+
+Known preview limits: live YouTube fullscreen and meeting-provider acceptance still need verification; network resume depends on server/WebKit support. Cross-origin redirected iframe tint can fall back to the outer page. Very large bookmark folder names can cause excessive import memory use; recovery snapshots may retain deleted normal profiles until rotation. iCloud passkey and Apple Passwords AutoFill support is not verified.
+
+Signed with a Developer ID and notarized by Apple. Existing installations can use Aether → Check for Updates….
+
 ## 0.6.8
 
 - **Fullscreen Tab Switching & Background Layer Purge:** Fixed an issue where switching tabs while a video (e.g. YouTube) was in element fullscreen would leave the previous tab's content (such as Cloudflare) visible in the viewport or render a blank window. Inactive tabs' web views are now immediately removed from the container on tab change, element fullscreen is cleanly dismissed, and clicking a tab in the sidebar reliably attaches and displays the selected tab.
