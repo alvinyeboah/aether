@@ -1,13 +1,13 @@
 <p align="center"><img src="assets/aether.png" width="112" alt="Aether"></p>
 
-Latest preview: **0.7.0** — [download the signed, notarized Universal app](https://github.com/alvinyeboah/aether/releases/tag/v0.7.0).
+Latest preview: **0.7.1** — [download the signed, notarized Universal app](https://github.com/alvinyeboah/aether/releases/tag/v0.7.1).
 
 <h1 align="center">Aether</h1>
 
 <p align="center"><strong>Room for the web.</strong><br>A native macOS browser built around spaces, a sidebar that gets out of the way, and a little more breathing room.</p>
 
 <p align="center">
-  <a href="https://aether-website-plum.vercel.app">Website</a> ·
+  <a href="https://aether.alvinyeboah.com">Website</a> ·
   <a href="https://github.com/alvinyeboah/aether/releases">Downloads</a> ·
   <a href="CHANGELOG.md">Release notes</a> ·
   <a href="https://github.com/alvinyeboah/aether/issues">Feedback</a>
@@ -52,7 +52,7 @@ It is written in **Swift 6, AppKit and WebKit**. There is no web-based chrome, n
 
 | | |
 | --- | --- |
-| **Super lightweight** | A 6.6 MB download, about 9 MB installed. Chromium-based browsers such as Chrome and Dia are over 1 GB because they bundle their own engine; Aether uses the WebKit that is already part of macOS. |
+| **Super lightweight** | A small native download. Chromium-based browsers such as Chrome and Dia are over 1 GB because they bundle their own engine; Aether uses the WebKit that is already part of macOS. |
 | **Spaces, not tab soup** | Group tabs by what you are doing. Each space has its own glyph, colour and even wallpaper, and the whole sidebar tints to match. |
 | **A dock for your spaces** | The active space is a wide pill; the rest are compact orbs. Drag to reorder, swipe to switch. |
 | **Profiles that really are separate** | Every profile has its own WebKit data store, so cookies, logins and local storage never cross profile lines. |
@@ -272,7 +272,7 @@ Importing does **not** move passwords, passkeys, signed-in sessions, cookies, ex
 
 ## Privacy
 
-- **No telemetry, no analytics, no accounts.** The only thing Aether contacts on its own is GitHub, once a day, to check for a newer release (you can turn this off in Settings → General → Updates).
+- **No telemetry, no analytics, no accounts.** Optional update checks contact GitHub; filter-list updates contact easylist.to. Site icons come directly from visited sites. These requests do not send your browsing history.
 - **Secure connections first.** Aether tries `https://` before `http://` and asks before using a site with no secure version.
 - **Local by default.** Tabs, history, bookmarks and settings live in your own `Library/Application Support/Aether` folder; web data lives in per-profile WebKit stores.
 - **Isolated profiles.** Cookies and site storage are never shared between profiles.
@@ -313,7 +313,7 @@ Apple's WebKit (`WKWebView`), the same engine as Safari. Sites that work in Safa
 Only the older 0.3.x and 0.4.0 downloads are ad-hoc signed; for those, right-click → Open, or use **Open Anyway** in System Settings → Privacy & Security. 0.4.1 and later are notarized and open normally.
 
 **Does it work on Intel Macs or Windows?**
-Not currently. It is built for Apple Silicon and macOS 14 or later.
+The Universal preview supports Apple Silicon and Intel Macs running macOS 14 or later. Windows is not supported.
 
 **Will my Chrome or Safari extensions work?**
 No. Aether has an early WebExtensions implementation, not full Chrome or Safari extension compatibility.

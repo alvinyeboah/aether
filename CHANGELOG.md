@@ -1,5 +1,20 @@
 # Developer preview notes
 
+## 0.7.1 — 2 November 2026
+
+- **Readable DevTools:** larger interface and code text, clearer contrast and selection, more room for details, document-bound edits, full storage-value editing and bounded network response previews. Capture stops when the inspector is hidden.
+- **Buttons and settings:** Restore Backup and other prompt actions keep complete labels; crowded actions stack, and settings controls adapt to narrow windows. Added customizable menu shortcuts, a redacted diagnostics preview/export, appearance storage cleanup and per-site page-text exclusions.
+- **Session and tab safety:** preserve pending saves during imports, retire deleted profiles from recovery, restore the correct profile/space, preserve selected split panes and suspend tabs only after their web view is released.
+- **Downloads and updates:** preserve file reservations through cancellation, keep progress controls stable, identify missing files, warn before quitting active downloads and honor failed-save/canceled-quit decisions. Normal downloads retain a minimal local interrupted-transfer notice across restarts; restart from the original website. Private downloads are excluded.
+- **Browsing boundaries:** scope history, zoom, HTTP fallback, Reader, Find, previews and delayed actions to the owning profile and document. Reader content is inert; preview failures are visible. Improved translation cancellation, notification replacement/closing, URL parsing, icon limits and tracking-link cleanup.
+- **Extensions and appearance:** restore normal-profile registrations and display real load failures, tear down retired profiles, keep private assets transient, and bound image imports. Unsupported extension action popups explain their limitation.
+- **Import undo:** review an import operation and remove only its unchanged imported rows; preserve later edits and profile/space containers.
+- **Optional Granola companion:** Settings → Tabs can open the installed Granola app when a recognized Meet, Teams or Zoom page uses the microphone. Off by default, excluded from private browsing, and sends no meeting details. Start a note in Granola to transcribe; Aether does not start recording.
+
+**Verification:** 488 automated tests passed across 130 suites. Universal app for Apple Silicon and Intel, macOS 14+. Developer ID signing and Apple notarization are verified as part of release publication.
+
+**Preview limits:** repeated live YouTube fullscreen, provider-specific meeting controls, real network resume, native notifications and Granola handoff still need live acceptance checks. Resume support depends on WebKit/server support; recovery after restarting Aether is an interrupted notice rather than automatic authenticated resume. Cross-origin iframe tint may fall back to the outer page. Extension action popups, iCloud passkeys and Apple Passwords AutoFill remain unavailable or unverified. No new passkey approval is claimed.
+
 ## 0.7.0
 
 - **Site controls:** review camera, microphone and notification permissions, host shields and site-data clearing from the address/rail shield button.
