@@ -1,5 +1,21 @@
 # Developer preview notes
 
+## 0.7.4 — 3 November 2026
+
+Bookmarks, history, downloads and settings now share a more deliberate Aether interface.
+
+- Bookmarks: spacious saved-page rows with site initials, addresses and folders, a clearer search/filter toolbar, and selection-aware actions.
+- History: a chronological timeline with day headings, visit times and clearer empty/search states. Pagination and profile isolation remain intact.
+- Downloads: Aether filter pills, larger file rows, custom progress with VoiceOver information, and the existing cancellation and recovery actions.
+- Settings: consistent page headings, red-accented navigation, Aether checkboxes and appearance/layout selectors, and wrapping option descriptions.
+- Fixed saving the current page refreshing before the bookmark had been written. Saving now respects the selected folder, and changing filters clears stale selections.
+- Import/export confirmations now use Aether's prompt design.
+- Stronger pop-under protection: Aniwaves gets stricter cross-site popup handling, and script-created windows cannot escape through blank-page redirects to unknown advertising sites. Ordinary links, explicit modifier clicks, site exceptions and recognized sign-in/payment providers retain their supported paths.
+- Corrected the vertical centering of saved-site initials and download action padding.
+
+This release supports Apple Silicon and Intel Macs running macOS 14 or later. Browser passkeys and inline Apple Passwords remain subject to Apple's pending approval; this update does not change their availability.
+
+
 ## 0.7.3 — 3 November 2026
 
 - **Meeting stage for the floating call player.** When a call floats while you work in another tab, the compact player now shows the people who matter: up to two remote participants (the active speaker, or a shared screen plus a speaker), never your own camera or your own presentation. A small readout says who is speaking, who has a hand raised or that a screen is shared, and falls back to a neutral "In meeting" when the page gives no clear information. It reads page metadata only: it does not touch the call's audio or video tracks, and it leaves the provider's buttons and page styles alone.
