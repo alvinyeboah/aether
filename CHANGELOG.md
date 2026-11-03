@@ -1,5 +1,14 @@
 # Developer preview notes
 
+## 0.7.3 — 3 November 2026
+
+- **Meeting stage for the floating call player.** When a call floats while you work in another tab, the compact player now shows the people who matter: up to two remote participants (the active speaker, or a shared screen plus a speaker), never your own camera or your own presentation. A small readout says who is speaking, who has a hand raised or that a screen is shared, and falls back to a neutral "In meeting" when the page gives no clear information. It reads page metadata only: it does not touch the call's audio or video tracks, and it leaves the provider's buttons and page styles alone.
+- **It is tuned for Google Meet.** Participant tiles are recognised from the information a page exposes. Other providers (Zoom, Teams, Webex, Whereby, Discord, Chime) may show only the "In meeting" readout without video until they are checked and tuned.
+
+**Verification:** 542 automated tests passed (serial run), including 15 for stage selection on simulated meeting pages. Universal app for Apple Silicon and Intel, macOS 14+. Developer ID signing and Apple notarization.
+
+**Preview limits:** the stage has not been tried in a live Google Meet, Teams or Zoom call yet, and the earlier open items (repeated live YouTube fullscreen, Granola handoff, real network resume) still need live acceptance.
+
 ## 0.7.2 — 3 November 2026
 
 - **First-run setup.** A seven-step welcome flow lets a new user choose sidebar layout, tab grouping, search, an optional import from Dia, Chrome, Arc or Safari (with bookmark/history selection) and everyday preferences before browsing. It is animated, previews each choice, and can be replayed from Settings. Existing users are not interrupted.
