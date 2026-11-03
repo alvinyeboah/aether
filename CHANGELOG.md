@@ -1,5 +1,18 @@
 # Developer preview notes
 
+## 0.7.2 — 3 November 2026
+
+- **First-run setup.** A seven-step welcome flow lets a new user choose sidebar layout, tab grouping, search, an optional import from Dia, Chrome, Arc or Safari (with bookmark/history selection) and everyday preferences before browsing. It is animated, previews each choice, and can be replayed from Settings. Existing users are not interrupted.
+- **Everyday browsing.** Closed-space recovery, keyboard tab search, per-site zoom, searchable downloads, a reading queue with sanitized Reader copies, focused website windows, standard website shortcuts and clearer health controls.
+- **Quieter and more responsive.** Page loading progress no longer redraws the whole browser, hidden start-page history work only runs when the start page is showing, History and Bookmarks no longer wake up needlessly, and extension tab bookkeeping is cheaper. These remove work; they are not measured speed-ups.
+- **Granola companion (optional, off by default).** Opening Granola for a recognised meeting now shows it, reports a failed launch and lets you retry, and re-checks when you turn the setting on during a call. Opening Granola does not start transcription; open the meeting note or press New Note in Granola.
+- **Prompts and sharing.** The startup recovery prompt keeps stable button layouts (this fixes a layout crash), and screen-share frames are prepared off the main thread with back-pressure so the browser stays responsive while sharing.
+- **Extensions and passwords groundwork.** Native extensions now see the right tabs and windows per profile, and the system's own credential menus are preserved on login fields. This is groundwork only: iCloud Passwords/passkey filling and extension store installation are not working yet and are not claimed.
+
+**Verification:** 527 automated tests passed (run serially). Universal app for Apple Silicon and Intel, macOS 14+. Developer ID signing and Apple notarization.
+
+**Preview limits:** repeated live YouTube fullscreen, provider-specific meeting controls, real network resume, native notifications and the Granola handoff still need live acceptance on this build. The meeting "stage" view is not part of this release.
+
 ## 0.7.1 — 2 November 2026
 
 - **Readable DevTools:** larger interface and code text, clearer contrast and selection, more room for details, document-bound edits, full storage-value editing and bounded network response previews. Capture stops when the inspector is hidden.
