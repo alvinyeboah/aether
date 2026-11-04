@@ -1,5 +1,15 @@
 # Developer preview notes
 
+## 0.7.6 — 4 November 2026
+
+Fixes the overlapping buttons, misplaced search text and clipped loading bar in 0.7.5.
+
+- Buttons, pop-up menus, filter pills and search fields no longer overlap or sit taller than their row. This affected Bookmarks, History, Downloads, Settings, the tab manager and the other panels.
+- Search fields place their icon, placeholder and typed text on one line, with a clear button.
+- The page loading bar now draws on top of the page's rounded corner, so its glow and full stroke are no longer cut off.
+
+This release supports Apple Silicon and Intel Macs running macOS 14 or later. Browser passkeys and inline Apple Passwords remain subject to Apple's pending approval; this update does not change their availability.
+
 ## 0.7.5 — 4 November 2026
 
 Buttons and search fields now line up across Aether's pages and dialogs.
