@@ -1,5 +1,16 @@
 # Developer preview notes
 
+## 0.7.5 — 4 November 2026
+
+Buttons and search fields now line up across Aether's pages and dialogs.
+
+- Buttons, pop-up menus and search fields in a row share one height and one spacing, so toolbars and footers no longer sit flush against each other.
+- Search fields are now drawn in Aether's own style, matching the buttons beside them, with an accent outline while you type. This covers Bookmarks, History, Downloads, Settings, the tab manager, Find in Page and the developer tools.
+- The tab manager, reading queue, keyboard shortcuts, resource monitor, import and workspace recovery dialogs use Aether's buttons instead of the system ones.
+- Optional n0tch companion (off by default). Turn it on under Settings → Tabs & spaces to share a bounded busy/idle signal, meeting state and download progress with the n0tch app on your Mac. Private tabs are never shared, and nothing leaves your Mac.
+
+This release supports Apple Silicon and Intel Macs running macOS 14 or later. Browser passkeys and inline Apple Passwords remain subject to Apple's pending approval; this update does not change their availability.
+
 ## 0.7.4 — 3 November 2026
 
 Bookmarks, history, downloads and settings now share a more deliberate Aether interface.

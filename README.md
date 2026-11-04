@@ -1,6 +1,6 @@
 <p align="center"><img src="assets/aether.png" width="112" alt="Aether"></p>
 
-Latest preview: **0.7.4** — [download the signed, notarized Universal app](https://github.com/alvinyeboah/aether/releases/tag/v0.7.4).
+Latest preview: **0.7.5** — [download the signed, notarized Universal app](https://github.com/alvinyeboah/aether/releases/tag/v0.7.5).
 
 <h1 align="center">Aether</h1>
 
