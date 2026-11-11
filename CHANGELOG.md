@@ -1,5 +1,16 @@
 # Developer preview notes
 
+## 0.7.7 — 11 November 2026
+
+- Scroll over the expanded sidebar's spaces dock to browse all your spaces. Both sideways trackpad movement and vertical mouse-wheel scrolling work, without selecting spaces one by one.
+- Routine tab/title/count updates preserve the dock position you chose. Choosing a different space still brings it into view.
+- The compact rail keeps its existing space-switch gesture; sidebar gestures outside the expanded dock retain their behavior.
+- Command-Shift-C now copies the active page's full URL immediately, including its query string and fragment. It does not open a confirmation or remove parameters. A separate Copy Clean Link… option remains in Edit.
+- Removed the misleading Command-Shift-C hint from the clean-link context-menu action. The new Copy Page URL command is available in shortcut settings.
+
+Universal app for Apple Silicon and Intel Macs, macOS 14 or later. Apple Passwords allowlisting and the browser credential entitlement are separate approval processes; this release does not enable or claim approved inline AutoFill/passkey access.
+
+
 ## 0.7.6 — 4 November 2026
 
 Fixes the overlapping buttons, misplaced search text and clipped loading bar in 0.7.5.
