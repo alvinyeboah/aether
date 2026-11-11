@@ -1,5 +1,22 @@
 # Developer preview notes
 
+## 0.7.8 — 11 November 2026
+
+Aether 0.7.8 brings clearer spaces, sharing and meeting controls.
+
+- Choose an icon, emoji and colour when creating a space or profile, from the sidebar or Settings.
+- Spaces compact to icons during reordering, with a smaller drag preview and clear insertion marker.
+- Refined tab groups with quieter headers, readable counts and visible expand/close controls.
+- Share-tab choices stay inside the requesting space. Shared source tabs are marked in expanded, compact and split layouts. Moving either endpoint outside the authorized space stops capture.
+- Optional haptic feedback for tab and space actions, sidebar modes, appearance selection and completed actions. Disable it under Settings → Appearance.
+- Improved meeting PiP selection for camera-off participants, with name/initial cards; keeps participants visible while you present and remote presentations alongside participants when someone else presents.
+- Required crash-recovery prompts survive chrome refreshes, and quitting before choosing recovery preserves the saved session.
+- Removed unnecessary Swift executor checks from constant AppKit orientation getters.
+- About Aether now shows the installed bundle version and build, with the actual running architecture, rather than the old milestone label.
+
+Universal macOS build for Apple Silicon and Intel. Signed and notarized. Apple credential entitlement approval is still separate from this release; this update does not claim to enable passkeys.
+
+
 ## 0.7.7 — 11 November 2026
 
 - Scroll over the expanded sidebar's spaces dock to browse all your spaces. Both sideways trackpad movement and vertical mouse-wheel scrolling work, without selecting spaces one by one.
