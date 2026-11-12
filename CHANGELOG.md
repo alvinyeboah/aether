@@ -1,5 +1,18 @@
 # Developer preview notes
 
+## 0.7.9 — 12 November 2026
+
+Five improvements for a safer, smoother Aether.
+
+- **One session owner:** Aether acquires a process lock before opening browsing data. Additional launches hand off to the existing browser; a crashed process cannot leave a stale lock. Update & Restart waits for the old process to exit.
+- **Adaptive sharing:** Automatic sharing quality adjusts frame rate and resolution when delivery slows or thermal pressure rises. High and Efficient modes are available in Settings → Performance. Existing stream, aspect ratio, sharing badges and capture boundaries are preserved.
+- **Undo deletions:** Use the Undo toast, Edit → Undo Space or Group Deletion, or the command palette after deleting a space or closing a group. Undo is available for 15 seconds within the original profile and preserves custom appearance and newer work.
+- **Space Overview:** Open Spaces → Space Overview or search for it with Command-K. Search spaces and tab titles, preview tab lists, open a space, and drag cards to reorder. Suspended pages are not loaded for previews.
+- **Permission Activity:** Open View → Permission Activity or Settings → Privacy. See requests, decisions and observed capture changes. History is local to this Mac, profile isolated, limited to 500 events and 30 days, and private browsing is never recorded. Stored origins omit paths, queries and credentials.
+
+Signed, notarized Universal app for Apple Silicon and Intel, macOS 14 or later. No new services, accounts or telemetry. Apple credential approval is unchanged.
+
+
 ## 0.7.8 — 11 November 2026
 
 Aether 0.7.8 brings clearer spaces, sharing and meeting controls.
