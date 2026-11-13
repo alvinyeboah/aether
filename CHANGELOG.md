@@ -1,5 +1,27 @@
 # Developer preview notes
 
+## 0.8.0 — 13 November 2026
+
+Aether 0.8.0 adds clearer tab organisation, safer recovery, and more control over browsing.
+
+- Group headers use layered tab marks, counts, optional colours/icons and animated folding. Hover a folded group or choose Preview Tabs to open one of its tabs.
+- Select tabs with Command-click or Shift-click. Group, move, bookmark or close the selection through its context menu. Bulk close protects pinned tabs and offers deletion Undo.
+- Move a whole group between spaces and undo the move. Review exact duplicate tabs with active, pinned and playing copies protected. Close Other Tabs now previews the batch before applying.
+- Save and reopen named workspaces from File → Saved Workspaces. Reopening adds new spaces and preserves valid group/split relationships. Pages load when selected.
+- Retrying a failed page immediately shows Reloading, a spinner and Cancel Reload. Failure pages also offer Copy URL and Open in Safari.
+- Recover Session opens a current/saved metadata comparison and saves a separate rollback copy before restoring. Recovery excludes private browsing.
+- History adds exact site and date filters. Search Aliases supports local profile-specific HTTPS search templates from View → Search Aliases.
+- Reading Queue shows saved-copy dates and sizes, copy deletion and optional tomorrow reminders when the queue is next opened. Bookmark maintenance provides explicit duplicate and link checks with inspectable candidates and Undo.
+- Find keeps WebKit’s embedded-content coverage. Word matching adds a bounded main-page count, with an All action for native search.
+- Site media requests offer Allow Once, This Visit and Always. Profile changes invalidate pending grants. View → Active Camera, Microphone & Sharing shows capture tabs with jump and stop controls.
+- View → Blocked Popups shows source and destination origins for recent regular-profile blocks. Allow Next Popup grants a short-lived one-use exception. Private activity is omitted.
+- Downloads offer Keep Both, Replace, Choose Folder and Cancel. Replacement preserves the original until transfer completion and checks that it has not changed externally.
+- Settings adds Comfortable/Compact density, group unread progress, update channels/postponement and motion/haptic previews. Copy Page URL keeps Command-Shift-C.
+- Window → Performance Recording collects 30 seconds of local duration measurements for tab interface work, sharing delivery and main-thread scheduling. No URLs, page content or meeting content are recorded.
+
+Native AppKit and WebKit. Signed and notarized Universal app for Apple Silicon and Intel, macOS 14 or later. Apple credential approval remains a separate platform requirement.
+
+
 ## 0.7.9 — 12 November 2026
 
 Five improvements for a safer, smoother Aether.
