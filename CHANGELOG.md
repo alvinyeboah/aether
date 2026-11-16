@@ -1,5 +1,18 @@
 # Developer preview notes
 
+## 0.8.1 — 16 November 2026
+
+Aether 0.8.1 improves popup protection and introduces the managed Mini Aether browser overlay.
+
+- Mini Aether has back/forward navigation, an editable address field, reload/stop, copy URL, Keep Tab and Open Beside actions, hover feedback, light/dark styling and reduced-motion-aware entrance animation.
+- Promoting a preview preserves its existing page, form input, history and opener communication instead of reloading the URL.
+- Legitimate user-triggered cross-site script windows are no longer rejected solely for being cross-site. Accepted popups appear visibly; Command/middle-click retain background behavior.
+- Popup permissions no longer bypass advertising-destination filters. Aniwaves retains strict protection against click-triggered ad windows and cross-site bootstrap redirects, including when a popup exception was previously saved.
+- Blocked direct web links can be explicitly opened without refreshing the source page. Script-only attempts are labelled Allow Next; this does not recreate an already-denied script window.
+- Temporary previews close cleanly on source changes, nested popup openers stay alive, and visible previews cannot be suspended underneath the overlay.
+
+Developer ID signed and notarized Universal app for Apple Silicon and Intel, macOS 14 or later. Live Aniwaves and real provider checkout acceptance remain unverified. No new YouTube ad-blocking feature is claimed. Apple credential approval remains separate.
+
 ## 0.8.0 — 13 November 2026
 
 Aether 0.8.0 adds clearer tab organisation, safer recovery, and more control over browsing.
