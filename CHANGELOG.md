@@ -1,5 +1,15 @@
 # Developer preview notes
 
+## 0.8.2 — 22 November 2026
+
+Aether 0.8.2 fixes a startup browsing crash and window sizing problems.
+
+- Fixed a fatal WebKit assertion when a fresh Personal profile creates its first page, including searches from the start page and sidebar. The legacy Personal profile ID is mapped to a stable WebKit extension storage ID. Existing profile and website data identities are preserved.
+- Mini Aether follows the available page area. Long URLs compress inside its address field instead of enlarging the browser window.
+- Double-click empty browser chrome or Mini Aether’s navigation background to fit the usable screen. Double-click again to restore the previous size. Empty chrome also supports dragging the browser window.
+
+Universal app for Apple Silicon and Intel, macOS 14 or later.
+
 ## 0.8.1 — 16 November 2026
 
 Aether 0.8.1 improves popup protection and introduces the managed Mini Aether browser overlay.
