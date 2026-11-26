@@ -1,5 +1,15 @@
 # Developer preview notes
 
+## 0.8.3 — 26 November 2026
+
+Aether 0.8.3 fixes Mini Aether shrinking the outer browser window.
+
+The preview card’s maximum-width constraint could restrict the entire browser, especially in wide windows. Card sizing is now local to the overlay, so opening and closing a preview preserves the browser’s frame.
+
+The regression was reproduced in the production window controller and verified at 850, 1200 and 1600 points across expanded, compact and hidden sidebar modes. The full serial suite passed 662 tests.
+
+Universal app for Apple Silicon and Intel, macOS 14 or later.
+
 ## 0.8.2 — 22 November 2026
 
 Aether 0.8.2 fixes a startup browsing crash and window sizing problems.
