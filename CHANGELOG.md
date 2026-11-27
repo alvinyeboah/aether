@@ -1,5 +1,17 @@
 # Developer preview notes
 
+## 0.8.4 — 27 November 2026
+
+Aether 0.8.4 fixes a crash when an update is available and restores image-saving options.
+
+- Checking for updates no longer crashes while constructing the new-version dialog. The update header is attached before its layout constraint is activated.
+- Right-clicking an image now uses WebKit’s image menu, restoring native saving and copying, including embedded and blob images. Ordinary page content retains Aether’s menu.
+- Regression coverage includes the actual update dialog, resizing and dismissal, plus linked, embedded, blob and responsive shadow-root images.
+
+**If Check for Updates crashes on your current copy, download the DMG below and replace Aether in Applications manually.** The older installed updater cannot repair itself before displaying the dialog.
+
+Developer ID signed and notarized Universal app for Apple Silicon and Intel, macOS 14 or later. Apple credential entitlement approval remains separate. Interactive image-save dialog acceptance is not yet verified.
+
 ## 0.8.3 — 26 November 2026
 
 Aether 0.8.3 fixes Mini Aether shrinking the outer browser window.
