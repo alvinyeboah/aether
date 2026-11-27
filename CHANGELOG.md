@@ -1,5 +1,15 @@
 # Developer preview notes
 
+## 0.8.5 — 27 November 2026
+
+Aether 0.8.5 restores the Aether right-click menu for images.
+
+- **Save Image** starts a transfer in Aether Downloads.
+- **Copy Image** copies a PNG when the site allows image access. **Copy Image Address** copies the URL.
+- Supports Apple Silicon and Intel on macOS 14 or later.
+
+If Check for Updates crashes on an older copy, use the DMG to replace Aether in Applications.
+
 ## 0.8.4 — 27 November 2026
 
 Aether 0.8.4 fixes a crash when an update is available and restores image-saving options.
