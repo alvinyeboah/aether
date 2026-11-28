@@ -1,5 +1,13 @@
 # Developer preview notes
 
+## 0.8.6 — 28 November 2026
+
+Aether 0.8.6 opens local HTML documents from File → Open File (⌘O) and Finder. To open HTML in Aether on double-click, set Aether as the default app for that file type in Finder.
+
+Each open grants read access to the selected document only. Presentations with embedded assets work without granting access to the surrounding folder. Websites and the address bar cannot initiate local-file loads.
+
+Universal app for Apple Silicon and Intel on macOS 14 or later.
+
 ## 0.8.5 — 27 November 2026
 
 Aether 0.8.5 restores the Aether right-click menu for images.
