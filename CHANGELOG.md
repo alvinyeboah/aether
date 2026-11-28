@@ -1,5 +1,11 @@
 # Developer preview notes
 
+## 0.8.7 — 28 November 2026
+
+Aether 0.8.7 opens pasted local HTML URLs from the address bar, new-tab search field, and command palette. Invalid local addresses stay on the device. Finder and File → Open File remain available.
+
+Notarized Universal app for Apple Silicon and Intel. All 666 tests passed.
+
 ## 0.8.6 — 28 November 2026
 
 Aether 0.8.6 opens local HTML documents from File → Open File (⌘O) and Finder. To open HTML in Aether on double-click, set Aether as the default app for that file type in Finder.
